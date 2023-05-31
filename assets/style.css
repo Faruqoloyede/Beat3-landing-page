@@ -71,6 +71,19 @@ img {
   display: flex;
   align-items: center;
 }
+
+.section_title {
+  text-align: center;
+  font-size: 4.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.section_title_gradient {
+  background: var(--text-gradient);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 /*=============== HEADER ===============*/
 header {
   width: 100%;
@@ -79,7 +92,7 @@ header {
   left: 0;
   z-index: 100;
   padding-top: 1rem;
-  background: transparent;
+  background: var(--body-color);
 }
 
 button {
@@ -104,7 +117,7 @@ ul {
 }
 
 .section {
-  padding: 4rem 0 2rem;
+  padding: 4rem 4rem;
 }
 
 /*=============== NAV ===============*/
@@ -219,3 +232,69 @@ ul {
   font-size: 16px;
   margin-right: 0.5rem;
 }
+/*=============== SPONSOR ===============*/
+
+.sponsor img {
+  width: 90px;
+}
+
+.sponsor_container{
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  align-items: center;
+  gap: 5rem;
+  justify-content: center;
+}
+
+/*=============== SPECS ===============*/
+.spec_container {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.spec_content {
+  row-gap: 1.5rem;
+}
+
+.spec_data {
+  display: grid;
+  row-gap: .25rem;
+}
+
+.spec_title {
+  font-size: 1rem;
+}
+
+.spec_subtitle {
+  font-size: .875rem;
+}
+
+.spec_data:nth-child(1),
+.spec_data:nth-child(4) {
+  margin-left: 1.5rem;
+}
+
+.spec_container img {
+  position: absolute;
+  width: 250px;
+  right: -2rem;
+  top: 2rem;
+}
+
+/*=============== CASE ===============*/
+.case_container {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.case_container img{
+  width: 300px;
+}
+
+.case__description {
+  font-size: .875rem;
+  margin-bottom: 1rem;
+}
+
+/*=============== CASE ===============*/

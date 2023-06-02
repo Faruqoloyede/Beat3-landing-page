@@ -283,13 +283,19 @@ ul {
 
 /*=============== CASE ===============*/
 .case_container {
+  position: relative;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
 }
 
-.case_container img{
+.case_data {
+  padding: 5rem 0 3rem;
+}
+
+.case_img {
   width: 300px;
+  left: 7rem;
 }
 
 .case__description {
@@ -297,4 +303,75 @@ ul {
   margin-bottom: 1rem;
 }
 
-/*=============== CASE ===============*/
+/*=============== DISCOUNT ===============*/
+.discount_container {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 4rem 2rem;
+  border-radius: .75rem;
+  align-items: center;
+}
+
+.discount img {
+  position: absolute;
+  width: 300px;
+  top: 4rem;
+  right: 5rem;
+}
+
+.discount_title {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.discount_description {
+  margin-bottom: 1.5rem;
+}
+/*=============== PRODUCT ===============*/
+.product h2{
+  line-height: 0.85;
+}
+
+.product_container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem 1.5rem;
+  padding-top: 2rem;
+}
+
+.product_card {
+  position: relative;
+  height: 132px;
+  background-color: var(--container-color);
+  padding: .75rem;
+  border-radius: .5rem;
+  display: grid;
+}
+
+.product_img {
+  width: 80px;
+  position: absolute;
+  inset: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: -3rem;
+}
+
+.product_content {
+  align-self: flex-end;
+}
+
+.product_title,
+.product_price {
+  font-size: .875rem;
+}
+
+.product_price {
+  font-weight: bold;
+}
+
+.product_button {
+  position: absolute;
+  right: .5rem;
+  bottom: .5rem;
+  padding: .5rem;
+}

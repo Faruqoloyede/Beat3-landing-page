@@ -327,6 +327,11 @@ ul {
 .discount_description {
   margin-bottom: 1.5rem;
 }
+
+.discount i {
+  font-size: 16px;
+  margin-right: 0.5rem;
+}
 /*=============== PRODUCT ===============*/
 .product h2{
   line-height: 0.85;

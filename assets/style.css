@@ -92,7 +92,10 @@ header {
   left: 0;
   z-index: 100;
   padding-top: 1rem;
-  background: var(--body-color);
+}
+
+.header_scroll {
+  background-color: var(--body-color);
 }
 
 button {
@@ -185,7 +188,7 @@ ul {
   position: absolute;
   top: -4rem;
   left: 1rem;
-  line-height: 6rem;
+  line-height: 5rem;
 }
 
 .home_subtitle {
@@ -379,4 +382,88 @@ ul {
   right: .5rem;
   bottom: .5rem;
   padding: .5rem;
+}
+/*=============== FOOTER ===============*/
+.footer {
+  padding-top: 5rem;
+}
+
+.footer_container {
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-gap: 2rem; */
+}
+
+.footer_title {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.footer_link {
+  color: var(--text-color);
+}
+
+.footer_link:hover {
+  color: var(--white-color);
+}
+
+.footer_form {
+  display: flex;
+  column-gap: .5rem;
+  background-color: var(--container-color);
+  padding: .4rem .75rem;
+  border-radius: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer_form input {
+  background-color: var(--container-color);
+  width: 100%;
+  color: var(--white-color);
+  outline: 0;
+  border: unset;
+}
+
+.footer_form::placeholder {
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.footer_social {
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+.footer_social_link {
+  display: inline-flex;
+  color: var(--white-color);
+  background-color: var(--container-color);
+  padding: .5rem;
+  border-radius: .25rem;
+  font-size: 1rem;
+}
+
+.footer_social_link {
+  background-color: var(--black-color);
+}
+
+.footer_form .button {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer_form .button i {
+  margin-right: 0.5rem;
+}
+
+.footer .footer_copy {
+  text-align: center;
+  margin: 5rem 0 2rem 0;
 }

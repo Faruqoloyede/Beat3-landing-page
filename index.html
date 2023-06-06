@@ -9,7 +9,7 @@
     <!--=============== FONTAWESOM LINK ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!--=============== CSS LINK ===============-->
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>beat3-landing_page</title>
 </head>
 <body>
@@ -19,20 +19,28 @@
             <a href="#" class="logo">
                 <img src="assets/img/logo.png">
             </a>
-            <ul class="nav_items">
-                <li class="nav_list">
-                    <a href="#home" class="nav_link">Home</a>
-                </li>
-                <li class="nav_list">
-                    <a href="#specs" class="nav_link">Specs</a>
-                </li>
-                <li class="nav_list">
-                    <a href="#case" class="nav_link">Case</a>
-                </li>
-                <li class="nav_list">
-                    <a href="#products" class="nav_link">Products</a>
-                </li>
-            </ul>
+            <div class="nav_menu" id="nav_menu">
+                <ul class="nav_items">
+                    <li class="nav_list">
+                        <a href="#home" class="nav_link">Home</a>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#specs" class="nav_link">Specs</a>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#case" class="nav_link">Case</a>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#products" class="nav_link">Products</a>
+                    </li>
+                </ul>
+            </div>
+            <!--=============== HAMBURGER MENU ===============-->
+            <button id="menu_btn" class="hamburger">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
         </nav>
     </header>
     <!--=============== MAIN ===============-->
@@ -97,7 +105,7 @@
         </div>
        </section>
        <!--=============== CASE ===============-->
-       <section class="case section grid container" id="case">
+       <section class="case section  container" id="case">
         <h2 class="section_title section_title_gradient">CASE</h2>
         <div class="case_container container grid">
             <img src="assets/img/case.png" class="case_img">

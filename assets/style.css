@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root{
     /*========== Colors ==========*/
@@ -15,7 +16,7 @@
   --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
 
   /*=============== FONTS AND TYPOGRAPHY ===============*/
-  --body-font: sans-serif;
+  --body-font:'Poppins', sans-serif;
   --normal-font-size: .938rem;
   --h2-font: 1.2rem;
   --big-font-size: 4rem;
@@ -180,7 +181,9 @@ ul {
 }
 
 .home_title {
-  font-size:9.5rem;
+  font-size:6.5rem;
+  font-family: var(--body-font);
+  font-weight: 300;
   background: var(--text-gradient);
   color: transparent;
   -webkit-background-clip: text;
@@ -188,7 +191,7 @@ ul {
   position: absolute;
   top: -4rem;
   left: 1rem;
-  line-height: 5rem;
+  line-height: 6.5rem;
 }
 
 .home_subtitle {
@@ -224,6 +227,8 @@ ul {
   color: var(--white-color);
   padding: 1rem 1.25rem;
   border-radius: .5rem;
+  outline: unset;
+  border: unset;
   transition: .3s;
 }
 
@@ -256,7 +261,7 @@ ul {
 }
 
 .spec_content {
-  row-gap: 1.5rem;
+  row-gap: .5rem;
 }
 
 .spec_data {
@@ -466,4 +471,69 @@ ul {
 .footer .footer_copy {
   text-align: center;
   margin: 5rem 0 2rem 0;
+}
+
+/*=============== MOBILE RESPONSIVNESS ===============*/
+
+@media (max-width: 680px) {
+
+  .section {
+   padding: 2rem 2rem;
+  }
+  .logo img {
+    width: 1.5rem;
+  }
+
+  .nav_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    position: fixed;
+    padding: 4rem 0 3rem;
+    transition: .4s;
+    top: 0;
+    background-color: var(--body-color);
+    width: 100vw;
+    height: 50vh;
+    display: none;
+  }
+
+  .nav_link {
+    text-transform: uppercase;
+  }
+
+  .home img {
+    width: 200px;
+    top: -13rem;
+  }
+
+  .home_container {
+    grid-template-columns: 1fr;
+  }
+
+  .home_title {
+    font-size: 5.5rem;
+    left: 0;
+    top: -4rem;
+  }
+
+  .home_subtitle {
+    font-size: 3rem;
+  }
+
+  .sponsor_container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+  }
+
+  .spec_container img {
+    width: 200px;
+    right: -6rem;
+  }
+
+  .spec_content {
+    margin-right: 5rem;
+  }
+
 }

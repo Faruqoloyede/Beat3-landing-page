@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!--=============== CSS LINK ===============-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>beat3-landing_page</title>
 </head>
 <body>
@@ -69,10 +70,10 @@
        <!--=============== SPONSOR ===============-->
        <section class="sponsor section">
         <div class="sponsor_container container grid">
-            <img src="assets/img/sponsor1.png">
-            <img src="assets/img/sponsor2.png">
-            <img src="assets/img/sponsor3.png">
-            <img src="assets/img/sponsor4.png">
+            <img src="assets/img/sponsor1.png" data-aos="fade-up">
+            <img src="assets/img/sponsor2.png" data-aos="fade-up">
+            <img src="assets/img/sponsor3.png" data-aos="fade-up">
+            <img src="assets/img/sponsor4.png" data-aos="fade-up">
         </div>
        </section>
        <!--=============== SPECS ===============-->
@@ -81,40 +82,40 @@
         <div class="spec_container container grid">
             <div class="spec_content grid">
                     <!-- for bluetooth -->
-                <div class="spec_data">
+                <div class="spec_data" data-aos="fade-left">
                     <span class="icon"><i class="fa-brands fa-bluetooth"></i></i></span>
                     <h3 class="spec_title">Connection</h3>
                     <span class="spec_subtitle">Bluetooth v5.2</span>
                 </div>
                 <!-- for battery -->
-                <div class="spec_data">
+                <div class="spec_data" data-aos="fade-left">
                     <span class="icon"><i class="fa-solid fa-battery-full"></i></span>
                     <h3 class="spec_title">Battery</h3>
                     <span class="spec_subtitle">Duration 40h</span>
                 </div>
                 <!-- for load -->
-                <div class="spec_data">
+                <div class="spec_data" data-aos="fade-left">
                     <span class="icon"><i class="fa-solid fa-charging-station"></i></span>
                     <h3 class="spec_title">Load</h3>
                     <span class="spec_subtitle">Fast charge 4.2-AAC</span>
                 </div>
                 <!-- for microphone -->
-                <div class="spec_data">
+                <div class="spec_data" data-aos="fade-left">
                     <span class="icon"><i class="fa-solid fa-microphone"></i></span>
                     <h3 class="spec_title">Microphone</h3>
                     <span class="spec_subtitle">Supports Apple Siri <br> and Google</span>
                 </div>
             </div>
-            <img src="assets/img/specs.png">
+            <img src="assets/img/specs.png" data-aos="fade-right">
         </div>
        </section>
        <!--=============== CASE ===============-->
        <section class="case section  container" id="case">
         <h2 class="section_title section_title_gradient">CASE</h2>
         <div class="case_container container grid">
-            <img src="assets/img/case.png" class="case_img">
+            <img src="assets/img/case.png" class="case_img" data-aos="fade-left">
             <div class="case_data">
-                <p class="case__description">
+                <p class="case__description" data-aos="fade-up">
                     With a comfortable and adaptable case so that you can store
                     it whenever you want, and keep your durability forever.
                 </p>
@@ -125,19 +126,19 @@
        <!--===============DISCOUNT ===============-->
        <section class="discount section">
         <div class="discount_container container grid">
-            <div class="discount_data">
+            <div class="discount_data" data-aos="fade-up">
                 <h2 class="discount_title">Immerse yourself in <br> your music</h2>
                 <p class="discount_description">Get it now, up to 50% off.</p>
                 <a href="#" class="button button_flex"><i class="fa-solid fa-bag-shopping"></i>Shop Now</a>
             </div>
-            <img src="assets/img/discount.png">
+            <img src="assets/img/discount.png" data-aos="fade-right">
         </div>
        </section>
        <!--===============PRODUCTS ===============-->
        <section class="product section" id="products">
         <h2 class="section_title section_title_gradient">Choose <br>Your Style</h2>
         <div class="product_container container grid">
-            <article class="product_card">
+            <article class="product_card" data-aos="fade-up">
                 <div class="product_content">
                     <img src="assets/img/product1.png" class="product_img">
                     <h3 class="product_title">Black</h3>
@@ -148,7 +149,7 @@
                 </div>
             </article>
 
-            <article class="product_card">
+            <article class="product_card" data-aos="fade-up">
                 <div class="product_content">
                     <img src="assets/img/product2.png" class="product_img">
                     <h3 class="product_title">Red Black</h3>
@@ -159,7 +160,7 @@
                 </div>
             </article>
 
-            <article class="product_card">
+            <article class="product_card" data-aos="fade-up">
                 <div class="product_content">
                     <img src="assets/img/product3.png" class="product_img">
                     <h3 class="product_title">Night Black</h3>
@@ -170,7 +171,7 @@
                 </div>
             </article>
 
-            <article class="product_card">
+            <article class="product_card" data-aos="fade-up">
                 <div class="product_content">
                     <img src="assets/img/product4.png" class="product_img">
                     <h3 class="product_title">Blue</h3>
@@ -181,7 +182,7 @@
                 </div>
             </article>
 
-            <article class="product_card">
+            <article class="product_card" data-aos="fade-up">
                 <div class="product_content">
                     <img src="assets/img/product5.png" class="product_img">
                     <h3 class="product_title">Twilight gray</h3>
@@ -265,6 +266,12 @@
         <script src="assets/js/app.js"></script>
 
     <!--===============SCROLL REVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:300,
+        duration:1000
+      });
+    </script>
 </body>
 </html>
